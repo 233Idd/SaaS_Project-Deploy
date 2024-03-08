@@ -1,0 +1,256 @@
+@media screen and (min-width: 1024px) {
+    .logo-icons {flex: 0 0 40%;}
+    .cancel {width: 75%;}
+    .top-footer a { font-size: clamp(1rem, 1.2vw, 16px);}
+}
+
+
+    
+@media (max-width:768px) {
+
+    #list {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    [aria-controls="list"] {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    [aria-expanded="true"] ~ #list {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-image: linear-gradient(90deg, rgba(93,190,236,1) 39%, rgba(62,154,238,1) 52%);
+        width: 100%;
+        box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+        padding: 0px 100px 260px 100px;
+      }
+
+      [aria-expanded="true"] ~ #list.nav {
+        padding-bottom: 8px;
+        font-size: larger;
+      }
+
+      [aria-expanded="true"] ~ ul#list.navbar-nav .nav-link a {
+        line-height: 2;
+        color: var(--white);
+        font-size: var(--size-20);
+      }
+
+      [aria-expanded="true"] ~ ul#list.navbar-nav .btn  {
+        width: 100px;
+        font-size: 10px;
+        margin-top: 10px;
+      }
+
+
+    [aria-expanded="false"] .close {
+        display: none;
+    } 
+    
+    [aria-expanded="true"] .open {
+        display: none;
+    } 
+
+    .header,
+    .video-banner,
+    .featured-review,
+    .pricing-info,
+    .hiring-contact {   
+        flex-direction: column;
+        text-align: center;
+        gap: 5%;
+    }
+
+    .project-motto { 
+        text-align: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .learn-more {
+        margin: auto;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    .logo-icons {width: 70%;}
+
+    .benefit-cards {
+        flex-wrap: wrap;   
+    }
+
+    .cards {
+        flex: 50%;
+        max-width: 48%;   
+    }
+
+    .selling-point, 
+    .banner1,
+    .testimonial .review {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .testimonial .review {
+        margin-top: 20%;
+    }
+
+    .pricing-info {
+        padding-top: 0%;
+        text-align: left;
+    }
+
+    .starter-price { padding: 5%; }
+
+    .price-btn,
+    .month-price { text-align: center; }
+
+    .pricing-features,
+    .more-about-company {
+        padding: 5% 8%;
+    }
+
+    .why-hire {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5%;
+        margin: 5% auto;
+        text-align: left;
+    }
+
+    .contact span {white-space: normal;}
+
+    .more-about-company { 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 8px;
+    }
+
+    .bottom-footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 670px) {
+
+    .btn-video .fa-play {
+        top: 75%;
+        left: 45%;
+    }
+
+    .key-benefits-heading p { white-space: normal;}
+
+    .front-attributes {
+        flex-direction: column;
+        gap: 2%;
+        text-align: center;
+    }
+
+    .attribute {
+        flex-direction: row;
+        padding-bottom: 5%;
+        justify-content: flex-start;
+        gap: 10%;
+        width: 100%;
+    }
+
+    .pt1::after,
+    .pt2::after,
+    .pt3::after {
+        content: none;  
+    }
+
+    .social-media-icons {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .company-contact {
+        width: 70%;}
+
+    .policy-terms-site,
+    .media-links {
+        margin-bottom: 5%;
+    }
+
+    .country-footer {
+        margin-right: 15%;
+    }
+}
+
+@media (max-width:375px) {
+    .navbar-logo {
+        width: 30vmin;
+        max-width: 200%;
+    }
+
+    .navbar-toggler {right: var(--size-35);}
+
+    .project-motto p {
+        white-space: normal;
+        margin-bottom: 5%;
+    }
+
+    .learn-more {margin-top: 10%;}
+
+    .benefit-cards {
+        justify-content: center;
+    }
+   
+    .cards {
+        flex: 100%;
+        max-width: 90%;   
+        padding-left: 5%;
+    }
+
+    .card-image-wrapper {width: 10vw;}
+
+    .trusted-by-companies,
+    .why-hire,
+    .top-footer,
+    .more-about-company {
+        flex-direction: column;
+        gap: 2%;
+        text-align: center;
+    }
+
+    .company-logo img {
+        width: 35%;
+        padding: 3%;
+    }
+
+    .contact-form {border-radius: 10px;}
+
+    input, textarea, select { padding: 5%; }
+
+    .company-contact { 
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .more-about-company {
+        width: auto;
+        margin: auto;
+    }
+
+    .company-info,
+    .resources {padding-left: 15px;}
+
+    .features {padding-left: 20px;}
+
+    .help {display: inline-block;}
+
+    .bottom-footer-top,
+    .social-media-icons { row-gap: 20px; }
+
+}
+    
